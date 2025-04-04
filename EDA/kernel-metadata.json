@@ -9,6 +9,7 @@
   "enable_tpu": false,
   "enable_internet": true,
   "dataset_sources": [
+    "ysthehurricane/podcast-listening-time-prediction-dataset"
   ],
   "competition_sources": [
     "playground-series-s5e4"
