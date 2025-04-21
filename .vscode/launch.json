@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: optuna_xgb",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/Model/optuna_xgb.py",
+        "console": "integratedTerminal",
+        "env": {"CONDA_DEFAULT_ENV": "xgb_ok"},
+        "envFile": "${workspaceFolder}/.env"
+      },
+      {
+        "name": "Python: Benchmark GPU vs CPU",
+        "type": "debugpy",                    // oder "debugpy", je nach VS Code‑Setup
+        "request": "launch",
+        "program": "${workspaceFolder}/benchmark_gpu_vs_cpu.py",
+        "console": "integratedTerminal",
+        "args": [
+          "--samples", "200000",
+          "--features", "50",
+          "--rounds", "500"
+        ],
+        "env": {
+          "CONDA_DEFAULT_ENV": "xgb_ok"
+        },
+        "envFile": "${workspaceFolder}/.env"
+      }
+    ]
+  }
+  
