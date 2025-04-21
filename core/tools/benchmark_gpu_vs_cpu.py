@@ -44,12 +44,12 @@ if __name__ == "__main__":
         description="Vergleicht XGBoost CPU vs. GPU Performance"
     )
     parser.add_argument(
-        "--samples", type=int, default=100_000,
-        help="Anzahl der Samples (Standard: 100000)"
+        "--samples", type=int, default=500_000,
+        help="Anzahl der Samples (Standard: 500000)"
     )
     parser.add_argument(
-        "--features", type=int, default=30,
-        help="Anzahl der Features (Standard: 30)"
+        "--features", type=int, default=50,
+        help="Anzahl der Features (Standard: 50)"
     )
     parser.add_argument(
         "--rounds", type=int, default=200,
